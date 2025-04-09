@@ -35,7 +35,7 @@
         .attr("height", height);
 
       queue()
-        .defer(d3.json, "https://gist.githubusercontent.com/jefffriesen/6892860/raw/e1f82336dde8de0539a7bac7b8bc60a23d0ad788/zips_us_topo.json")
+        .defer(d3.json, "https://raw.githubusercontent.com/dmellstrom/zipcode-heatmap/refs/heads/master/zips_us_topo.json")
         .await((error, us) => {
           if (error) throw error;
 
